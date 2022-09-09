@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style_cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo_box">
+            <a href="index.html"><i class='bx bx-arrow-back'></i></a>
+        </div>
+        <a href="cart.html">
+            <div class="cart_box">
+                <i class='bx bxs-cart-alt' id="shopping_cart"></i>
+                <div class="counts" id="cartAmount">0
+                </div>        
+            </div>
+        </a>
+    </div>
+
+    <div class="cart">
+        <div class="cart_title">
+            <i class='bx bxs-cart-alt'></i>Shopping cart
+        </div>
+        
+            <div class="payment">
+                <div class="payment_left">
+                    <h2>Payment Details</h2>
+                    <div class="payment_methods">
+                        <button class="credit" id="credit">
+                            <i class='bx bxs-credit-card'></i>
+                            <h3>Credit Card</h3>
+                            <i class='bx bxs-check-circle'></i>
+                        </button>
+                        <button class="paypal" id="paypal">
+                            <i class='bx bxl-paypal'></i>
+                            <h3>PayPal</h3>
+                            <i class='bx bxs-check-circle' id="check"></i>
+                        </button>     
+                    </div>
+                    <div class="credit_method" id="credit_method"></div>
+                    <div class="payment_button" id="payment_button"></div>
+                </div>
+                
+                <div class="payment_right">
+                   
+                    <div class="payment_right_top" id="payment_right_top">
+                        
+                        
+                    </div>
+                    
+                    <div class="payment_right_bottom" id="payment_right_bottom"></div>
+                </div>
+
+            </div>
+        
+    </div>
+
+
+    <script src="data.js"></script>
+    <script src="cart.js"></script>
+    
+    
+</body>
+</html>
